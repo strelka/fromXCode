@@ -1,5 +1,5 @@
 //
-//  ViewController1104.h
+//  ViewController1104_2.h
 //  LoginForm
 //
 //  Created by iOS-School-1 on 11.04.17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController1104 : UIViewController
+@interface ViewController1104_2 : UIViewController
 
 @end

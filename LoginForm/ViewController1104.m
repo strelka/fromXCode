@@ -8,6 +8,10 @@
 
 #import "ViewController1104.h"
 
+@interface ViewController1104()
+
+@end
+
 @implementation ViewController1104
 
 /*
@@ -18,4 +22,18 @@
 }
 */
 
+-(instancetype)init{
+    self = [super init];
+    if (self){
+        self.tabBarItem.title = @"FirstVC";
+    }
+    return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = UIColor.lightGrayColor;
+    self.tabBarItem.title = @"First";
+    
+}
 @end

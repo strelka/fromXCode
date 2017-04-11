@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "ViewController1104.h"
+#import "ViewController1104_2.h"
 
 @interface AppDelegate ()
 
@@ -21,9 +21,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     //ViewController *vc = [[ViewController alloc] init];
     
-    ViewController1104 *vc = [[ViewController1104 alloc]  init];
-    self.window.rootViewController = vc;
+    ViewController1104 *firstVC = [[ViewController1104 alloc]  init];
+    ViewController1104_2 *secondVC = [[ViewController1104_2 alloc] init];
+    
+    NSArray *viewControllers = @[firstVC, secondVC];
+    
+    UITabBarController *tabBarController = [UITabBarController new];
+    [tabBarController setViewControllers:viewControllers animated:YES];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		040637861E9D36FD00A7B92F /* ViewController1104.m in Sources */ = {isa = PBXBuildFile; fileRef = 040637851E9D36FD00A7B92F /* ViewController1104.m */; };
+		0406378C1E9D3A1A00A7B92F /* ViewController1104_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406378B1E9D3A1A00A7B92F /* ViewController1104_2.m */; };
 		925BEAA51E9958210095CF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BEAA41E9958210095CF61 /* main.m */; };
 		925BEAA81E9958210095CF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BEAA71E9958210095CF61 /* AppDelegate.m */; };
-		925BEAAB1E9958210095CF61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BEAAA1E9958210095CF61 /* ViewController.m */; };
 		925BEAB01E9958210095CF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925BEAAF1E9958210095CF61 /* Assets.xcassets */; };
 		925BEABE1E9958210095CF61 /* LoginFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BEABD1E9958210095CF61 /* LoginFormTests.m */; };
 		925BEAC91E9958210095CF61 /* LoginFormUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BEAC81E9958210095CF61 /* LoginFormUITests.m */; };
@@ -36,12 +36,12 @@
 /* Begin PBXFileReference section */
 		040637841E9D36FD00A7B92F /* ViewController1104.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1104.h; sourceTree = "<group>"; };
 		040637851E9D36FD00A7B92F /* ViewController1104.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1104.m; sourceTree = "<group>"; };
+		0406378A1E9D3A1A00A7B92F /* ViewController1104_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1104_2.h; sourceTree = "<group>"; };
+		0406378B1E9D3A1A00A7B92F /* ViewController1104_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1104_2.m; sourceTree = "<group>"; };
 		925BEAA01E9958210095CF61 /* LoginForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		925BEAA41E9958210095CF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		925BEAA61E9958210095CF61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		925BEAA71E9958210095CF61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		925BEAA91E9958210095CF61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		925BEAAA1E9958210095CF61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		925BEAAF1E9958210095CF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925BEAB41E9958210095CF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925BEAB91E9958210095CF61 /* LoginFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +80,8 @@
 		925BEA971E9958200095CF61 = {
 			isa = PBXGroup;
 			children = (
+				0406378A1E9D3A1A00A7B92F /* ViewController1104_2.h */,
+				0406378B1E9D3A1A00A7B92F /* ViewController1104_2.m */,
 				925BEAA21E9958210095CF61 /* LoginForm */,
 				925BEABC1E9958210095CF61 /* LoginFormTests */,
 				925BEAC71E9958210095CF61 /* LoginFormUITests */,
@@ -102,8 +104,6 @@
 			children = (
 				925BEAA61E9958210095CF61 /* AppDelegate.h */,
 				925BEAA71E9958210095CF61 /* AppDelegate.m */,
-				925BEAA91E9958210095CF61 /* ViewController.h */,
-				925BEAAA1E9958210095CF61 /* ViewController.m */,
 				925BEAAF1E9958210095CF61 /* Assets.xcassets */,
 				925BEAB41E9958210095CF61 /* Info.plist */,
 				925BEAA31E9958210095CF61 /* Supporting Files */,
@@ -271,8 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				040637861E9D36FD00A7B92F /* ViewController1104.m in Sources */,
-				925BEAAB1E9958210095CF61 /* ViewController.m in Sources */,
 				925BEAA81E9958210095CF61 /* AppDelegate.m in Sources */,
+				0406378C1E9D3A1A00A7B92F /* ViewController1104_2.m in Sources */,
 				925BEAA51E9958210095CF61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
