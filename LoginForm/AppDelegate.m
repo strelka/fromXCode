@@ -21,7 +21,7 @@
     ViewController *vc = [[ViewController alloc] init];
     self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+   // [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     
     return YES;
