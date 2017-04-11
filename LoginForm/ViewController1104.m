@@ -7,6 +7,7 @@
 //
 
 #import "ViewController1104.h"
+#import "ViewController1104_2.h"
 
 @interface ViewController1104()
 
@@ -25,8 +26,9 @@
 -(instancetype)init{
     self = [super init];
     if (self){
-        self.tabBarItem.title = @"FirstVC";
-            self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
+        self.navigationItem.title = @"first screen";
+        //self.tabBarItem.title = @"FirstVC";
+        //    self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
     }
     return self;
 }
@@ -35,7 +37,32 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.lightGrayColor;
     self.tabBarItem.title = @"FirstVC";
-        self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
     
+    UIButton *btn = [[UIButton alloc]init];
+    CGRect bounds = self.view.bounds;
+    
+    double rootWidth = bounds.size.width;
+    double rootHeight = bounds.size.height;
+    double heightStep = 20;
+    double width = bounds.size.width /10;
+    
+    btn.frame = CGRectMake(rootWidth / 2, rootHeight / 2, 100, 40);
+    btn.backgroundColor = UIColor.darkGrayColor;
+    
+    [btn setTitle:@"->" forState:UIControlStateNormal];
+    //[btn setTitleColor:<#(nullable UIColor *)#> forState:<#(UIControlState)#>:<#(nullable NSString *)#> forState:<#(UIControlState)#>]
+    
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(buttonClick:) forControlEvents: UIControlEventTouchUpInside];
+        //self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
+    
+    
+    
+}
+
+-(void) buttonClick:(UIButton *)button{
+
+    ViewController1104_2 *vc = [ViewController1104_2 new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

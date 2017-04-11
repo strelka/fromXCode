@@ -22,19 +22,22 @@
     //ViewController *vc = [[ViewController alloc] init];
     
     ViewController1104 *firstVC = [[ViewController1104 alloc]  init];
-    ViewController1104_2 *secondVC = [[ViewController1104_2 alloc] init];
+    //ViewController1104_2 *secondVC = [[ViewController1104_2 alloc] init];
     
-    NSArray *viewControllers = @[firstVC, secondVC];
+    //NSArray *viewControllers = @[firstVC, secondVC];
     
     //UITabBarController *tabBarController = [UITabBarController new];
     //[tabBarController setViewControllers:viewControllers animated:YES];
-    UISplitViewController *splitViewController = [UISplitViewController new];
+    //UISplitViewController *splitViewController = [UISplitViewController new];
     
-    splitViewController.viewControllers = viewControllers;
+    //splitViewController.viewControllers = viewControllers;
+    
+    UINavigationController *navcontroller = [UINavigationController new];
+    navcontroller.viewControllers = @[firstVC];
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = splitViewController;
+    self.window.rootViewController = navcontroller;
     
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
