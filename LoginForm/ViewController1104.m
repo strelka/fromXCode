@@ -26,6 +26,7 @@
     self = [super init];
     if (self){
         self.tabBarItem.title = @"FirstVC";
+            self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
     }
     return self;
 }
@@ -33,7 +34,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.lightGrayColor;
-    self.tabBarItem.title = @"First";
+    self.tabBarItem.title = @"FirstVC";
+        self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
     
 }
 @end

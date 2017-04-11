@@ -26,13 +26,16 @@
     
     NSArray *viewControllers = @[firstVC, secondVC];
     
-    UITabBarController *tabBarController = [UITabBarController new];
-    [tabBarController setViewControllers:viewControllers animated:YES];
+    //UITabBarController *tabBarController = [UITabBarController new];
+    //[tabBarController setViewControllers:viewControllers animated:YES];
+    UISplitViewController *splitViewController = [UISplitViewController new];
     
+    splitViewController.viewControllers = viewControllers;
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = splitViewController;
+    
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     
