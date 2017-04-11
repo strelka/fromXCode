@@ -1,52 +1,46 @@
 //
-//  ViewController1104_2.m
+//  ViewController_3.m
 //  LoginForm
 //
 //  Created by iOS-School-1 on 11.04.17.
 //  Copyright © 2017 Jullia Sharaeva. All rights reserved.
 //
 
-#import "ViewController1104_2.h"
-#import "ViewController5.h"
-#import "ViewController4.h"
+#import "ViewController_3.h"
 
-@interface ViewController1104_2 ()
+@interface ViewController_3 ()
 
 @end
 
-
-@implementation ViewController1104_2
-
+@implementation ViewController_3
 
 -(instancetype)init{
     self = [super init];
     if (self){
         //self.navigationItem.title = @"first screen";
-        self.tabBarItem.title = @"SecondVC";
+        self.tabBarItem.title = @"ThirdVC";
         self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
     }
     return self;
 }
-
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    
-    self.view.backgroundColor = UIColor.darkGrayColor;
-    
-    self.tabBarItem.title = @"SecondVC";
+    self.view.backgroundColor = UIColor.whiteColor;
+    self.tabBarItem.title = @"ThirdVC";
     self.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -6);
     
-      UIButton *btn = [[UIButton alloc]init];
-      CGRect bounds = self.view.bounds;
+    UIButton *btn = [[UIButton alloc]init];
+    CGRect bounds = self.view.bounds;
     
-      double rootWidth = bounds.size.width;
-      double rootHeight = bounds.size.height;
-      double heightStep = 20;
-      double width = bounds.size.width /10;
+    double rootWidth = bounds.size.width;
+    double rootHeight = bounds.size.height;
+    double heightStep = 20;
+    double width = bounds.size.width /10;
     
-      btn.frame = CGRectMake(rootWidth / 2, rootHeight / 2, 100, 40);
-      btn.backgroundColor = UIColor.darkGrayColor;
+    [self.view addSubview:btn];
+    
+    btn.frame = CGRectMake(rootWidth / 2, rootHeight / 2, 100, 40);
+    btn.backgroundColor = UIColor.darkGrayColor;
     
     [btn setTitle:@"->" forState:UIControlStateNormal];
     
@@ -56,16 +50,11 @@
     
 }
 
+
 -(void) buttonClick:(UIButton *)button{
     
-   // ViewController5 *vc = [ViewController5 new];
-   // [ self.navcontroller pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-
-
-
-    
-    // Do any additional setup after loading the view.
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController1104.h"
-#import "ViewController1104_2.h"
+#import "ViewController1.h"
+#import "ViewController2.h"
+#import "ViewController3.h"
+#import "ViewController4.h"
+#import "ViewController5.h"
+
 
 @interface AppDelegate ()
 
@@ -19,26 +23,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    //ViewController *vc = [[ViewController alloc] init];
     
-    ViewController1104 *firstVC = [[ViewController1104 alloc]  init];
-    //ViewController1104_2 *secondVC = [[ViewController1104_2 alloc] init];
+    ViewController1 *firstVC = [ViewController1 new];
+    ViewController2 *secondVC = [ViewController2 new];
+    ViewController3 *thirdVC = [ViewController3 new];
     
-    //NSArray *viewControllers = @[firstVC, secondVC];
+    NSArray *viewControllers = @[firstVC, secondVC, thirdVC];
     
-    //UITabBarController *tabBarController = [UITabBarController new];
-    //[tabBarController setViewControllers:viewControllers animated:YES];
+    UITabBarController *tabBarController = [UITabBarController new];
+    [tabBarController setViewControllers:viewControllers animated:YES];
+    
     //UISplitViewController *splitViewController = [UISplitViewController new];
     
     //splitViewController.viewControllers = viewControllers;
     
     UINavigationController *navcontroller = [UINavigationController new];
-    navcontroller.viewControllers = @[firstVC];
+    //navcontroller.viewControllers = @[firstVC];
     
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    self.window.rootViewController = navcontroller;
-    
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     
